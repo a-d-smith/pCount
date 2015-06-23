@@ -16,7 +16,6 @@
 #define LARLITE_EVSEL_MCTRUTH_H
 
 #include "Analysis/ana_base.h"
-#include "DataFormat/mctruth.h"
 #include "DataFormat/mctrack.h"
 
 namespace larlite {
@@ -50,7 +49,10 @@ namespace larlite {
     virtual bool finalize();
     
     int loop_index;
-    int candidates;
+    int protonTotal;
+    int neutronTotal;
+    int protons;
+    int neutrons;
   protected:
     
   };
