@@ -17,6 +17,8 @@
 
 #include "Analysis/ana_base.h"
 #include "DataFormat/mctrack.h"
+#include "TCanvas.h"
+#include "TH1.h"
 
 namespace larlite {
   /**
@@ -47,12 +49,13 @@ namespace larlite {
         Finalize method to be called after all events processed.
     */
     virtual bool finalize();
-    
+
+    std::vector<unsigned int> usedID;
+    std::vector<mctrack> uniqueTracks;
+    std::vector<int> usedPDG;    
+
     int loop_index;
-    int protonTotal;
-    int neutronTotal;
-    int protons;
-    int neutrons;
+
   protected:
     
   };
