@@ -53,6 +53,7 @@ namespace larlite {
     std::vector<unsigned int> usedID;
     std::vector<mctrack> uniqueTracks;
     std::vector<int> usedPDG;    
+    std::vector<int> particles;
 
     int loop_index;
 
